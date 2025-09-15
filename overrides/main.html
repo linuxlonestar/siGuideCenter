@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block repo %}
+    {% if page.url_to_print_page %}
+        <li class="nav-item">
+            <a onClick="window.print()" title="Print Site" class="nav-link">
+                <i class="fa fa-print"></i> Print
+            </a>
+        </li>
+    {% endif %}
+
+{{ super() }}
+{% endblock repo %}
